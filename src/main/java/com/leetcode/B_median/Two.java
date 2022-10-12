@@ -88,6 +88,7 @@ public class Two {
         return ret.next;
     }
 
+    //但提交的代码只通过 1152/1568，但是本地IDE是可以通过的
     public static ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
         ListNode ret = l1, pre = l1;
         //ten记录当前计算是否有进位，value即为当前计算的个位值
@@ -115,6 +116,7 @@ public class Two {
 
         return ret;
     }
+
     //解法1、2的逻辑优化（代码优化）版本
     public static ListNode addTwoNumbers3(ListNode l1, ListNode l2) {
         //设置哑结点作临时头指针
