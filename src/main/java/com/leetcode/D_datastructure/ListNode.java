@@ -3,7 +3,7 @@ package com.leetcode.D_datastructure;
 /**
  * @author Einstein
  * @version 1.0
- * @description: Todo
+ * @description Todo
  * @date 2022/10/11 18:52
  */
 public class ListNode {

@@ -1,15 +1,15 @@
 package com.leetcode.B_median;
 
-/**
- * @author Einstein
- * @version 1.0
- * @description: 两数相加： https://leetcode.cn/problems/add-two-numbers
- * @date 2022/10/12 18:52
- */
-
 import com.leetcode.D_datastructure.ListNode;
 
 import java.util.Scanner;
+
+/**
+ * @author Einstein
+ * @version 1.0
+ * @description 两数相加： https://leetcode.cn/problems/add-two-numbers
+ * @date 2022/10/12 18:52
+ */
 
 /**
  * 给你两个 非空 的链表，表示两个非负的整数。它们每位数字都是按照 逆序 的方式存储的，并且每个节点只能存储 一位 数字。
@@ -20,6 +20,7 @@ import java.util.Scanner;
  * 输出：[7,0,8]
  * 解释：342 + 465 = 807.
  */
+
 public class Two {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);

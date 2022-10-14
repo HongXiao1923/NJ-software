@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 /**
- *@description: 两数之和：https://leetcode.cn/problems/two-sum/
+ *@description 两数之和：https://leetcode.cn/problems/two-sum/
  *@author Einstein
  *@date 2022/10/11 18:48
  *@version 1.0
