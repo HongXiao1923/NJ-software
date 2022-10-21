@@ -1,13 +1,15 @@
-package softwareEngineering.software.designPattern.build.simpleFactory;
+package softwareEngineering.software.designPattern.build.simpleFactory.style;
+
+import softwareEngineering.software.designPattern.build.simpleFactory.Pizza;
 
 /**
  * @author Einstein
  * @version 1.0
- * @description 具体的披萨
+ * @description 具体产品：意大利腊肠披萨
  * @date 2022/10/18 20:24
  * @see
  */
-public class PepperoniPizza extends Pizza{
+public class PepperoniPizza extends Pizza {
 
     @Override
     public void bake() {

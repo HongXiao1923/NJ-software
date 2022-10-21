@@ -1,9 +1,14 @@
 package softwareEngineering.software.designPattern.build.simpleFactory;
 
+import softwareEngineering.software.designPattern.build.simpleFactory.style.CheesePizza;
+import softwareEngineering.software.designPattern.build.simpleFactory.style.ClamPizza;
+import softwareEngineering.software.designPattern.build.simpleFactory.style.PepperoniPizza;
+import softwareEngineering.software.designPattern.build.simpleFactory.style.VeggiePizza;
+
 /**
  * @author Einstein
  * @version 1.0
- * @description 专门用于创建披萨的工厂类
+ * @description 工厂：生产各种披萨
  * @date 2022/10/18 20:22
  * @see
  */
