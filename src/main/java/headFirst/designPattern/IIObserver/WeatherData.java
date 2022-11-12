@@ -1,4 +1,4 @@
-package headFirst.designPattern.IObserver;
+package headFirst.designPattern.IIObserver;
 
 import java.util.ArrayList;
 import java.util.List;

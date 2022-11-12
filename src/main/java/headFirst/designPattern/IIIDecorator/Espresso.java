@@ -1,4 +1,4 @@
-package headFirst.designPattern.IIDecorator;
+package headFirst.designPattern.IIIDecorator;
 
 /**
  * @author Einstein

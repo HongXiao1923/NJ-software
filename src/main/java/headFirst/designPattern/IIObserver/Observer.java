@@ -1,4 +1,4 @@
-package headFirst.designPattern.IObserver;
+package headFirst.designPattern.IIObserver;
 
 /**
  * @author Einstein
