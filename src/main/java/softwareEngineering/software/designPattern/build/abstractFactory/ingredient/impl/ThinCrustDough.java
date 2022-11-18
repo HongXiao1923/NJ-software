@@ -10,5 +10,4 @@ import softwareEngineering.software.designPattern.build.abstractFactory.ingredie
  * @see
  */
 public class ThinCrustDough implements Dough {
-    public ThinCrustDough(){}
 }

@@ -9,7 +9,7 @@ package headFirst.designPattern.IVFactory.iSimpleFactory;
  */
 public class CheesePizza extends Pizza{
     public CheesePizza(){
-        name = "简单工厂生产披萨";
+        name = "简单工厂生产的奶酪披萨";
         dough = "加点面团";
         sauce = "加点酱汁";
     }
