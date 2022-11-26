@@ -51,19 +51,13 @@ public abstract class Pizza {
         this.name = name;
     }
 
-    public String getDough() {
-        return dough;
-    }
-
-    public void setDough(String dough) {
-        this.dough = dough;
-    }
-
-    public String getSauce() {
-        return sauce;
-    }
-
-    public void setSauce(String sauce) {
-        this.sauce = sauce;
+    @Override
+    public String toString() {
+        return "Pizza{" +
+                "name='" + name + '\'' +
+                ", dough='" + dough + '\'' +
+                ", sauce='" + sauce + '\'' +
+                ", toppings=" + toppings +
+                '}';
     }
 }

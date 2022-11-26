@@ -9,6 +9,10 @@ package headFirst.designPattern.IVFactory.iSimpleFactory;
 public class PizzaStore {
     SimplePizzaFactory factory;
 
+    /**
+     * 绑定工厂（相当于传一个命令）
+     * @param factory
+     */
     public PizzaStore(SimplePizzaFactory factory) {
         this.factory = factory;
     }

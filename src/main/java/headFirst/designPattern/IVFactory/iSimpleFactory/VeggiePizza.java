@@ -8,4 +8,9 @@ package headFirst.designPattern.IVFactory.iSimpleFactory;
  * @see
  */
 public class VeggiePizza extends Pizza{
+    public VeggiePizza(){
+        name = "简单工厂生产的素食披萨";
+        dough = "加点面团";
+        sauce = "加点酱汁";
+    }
 }

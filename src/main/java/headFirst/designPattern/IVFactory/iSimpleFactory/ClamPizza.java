@@ -8,5 +8,9 @@ package headFirst.designPattern.IVFactory.iSimpleFactory;
  * @see
  */
 public class ClamPizza extends Pizza{
-
+    public ClamPizza(){
+        name = "简单工厂生产的蛤蜊披萨";
+        dough = "加点面团";
+        sauce = "加点酱汁";
+    }
 }
