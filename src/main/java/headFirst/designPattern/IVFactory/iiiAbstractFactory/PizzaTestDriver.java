@@ -10,7 +10,7 @@ package headFirst.designPattern.IVFactory.iiiAbstractFactory;
 public class PizzaTestDriver {
     public static void main(String[] args) {
         PizzaStore nyPizzaStore = new NYPizzaStore();
-        PizzaStore chicagoPizzastore = new ChicagoPizzaStore();
+        PizzaStore chicagoPizzaStore = new ChicagoPizzaStore();
 
         Pizza pizza = null;
 
@@ -19,7 +19,7 @@ public class PizzaTestDriver {
 
         System.out.println("------ 分割线 ------");
 
-        pizza = chicagoPizzastore.orderPizza("veggie");
+        pizza = chicagoPizzaStore.orderPizza("veggie");
         System.out.println("Joel ordered a " + pizza.getName());
 
     }

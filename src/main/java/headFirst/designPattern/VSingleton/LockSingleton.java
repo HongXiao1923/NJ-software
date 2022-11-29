@@ -12,6 +12,10 @@ public class LockSingleton {
 
     private LockSingleton(){}
 
+    /**
+     * 为延迟加载方式加上一层锁
+     * @return
+     */
     public static synchronized LockSingleton getInstance(){
         if(uniqueInstance == null){
             uniqueInstance = new LockSingleton();

@@ -3,7 +3,7 @@ package headFirst.designPattern.VSingleton;
 /**
  * @author Einstein
  * @version 1.0
- * @description Todo
+ * @description 这种单例在多线程模式下是错的，不符合竞价条件
  * @date 2022/11/18 16:09
  * @see
  */
@@ -15,7 +15,7 @@ public class DelaySingleton {
     }
 
     /**
-     * 实例化方法
+     * 懒汉方式：实现延迟加载，线程不安全
      * @return
      */
     public static DelaySingleton getInstance(){

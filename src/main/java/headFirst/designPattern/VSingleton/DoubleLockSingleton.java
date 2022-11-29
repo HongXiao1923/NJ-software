@@ -9,11 +9,15 @@ package headFirst.designPattern.VSingleton;
  */
 public class DoubleLockSingleton {
 
-    //volatile 保证顺序性
+    //volatile 保证顺序性（第一次加锁）
     private volatile static DoubleLockSingleton uniqueInstance;
 
     private DoubleLockSingleton(){}
 
+    /**
+     * 为延迟加载方式加上双重锁（第二次加锁）
+     * @return
+     */
     public static DoubleLockSingleton getInstance(){
         if(uniqueInstance == null){
             synchronized (DoubleLockSingleton.class){

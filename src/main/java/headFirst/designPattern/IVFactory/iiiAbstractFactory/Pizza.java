@@ -18,7 +18,6 @@ import java.util.Arrays;
  */
 public abstract class Pizza {
     String name;
-
     Dough dough;
     Sauce sauce;
     Veggies[] veggies;
