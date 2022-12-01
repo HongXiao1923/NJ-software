@@ -7,7 +7,6 @@ package softwareEngineering.software.designPattern.action.strategy;
  * @date 2022/11/3 16:45
  */
 public interface Sort{
-
     public abstract int[] sort(int arr[]);
 
 }

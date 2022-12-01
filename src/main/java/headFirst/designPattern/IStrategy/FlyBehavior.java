@@ -7,6 +7,5 @@ package headFirst.designPattern.IStrategy;
  * @date 2022/11/12 21:22
  */
 public interface FlyBehavior {
-
     public void fly();
 }

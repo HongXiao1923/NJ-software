@@ -16,19 +16,11 @@ public abstract class Duck {
     }
 
     /**
-     * 以下 setter 用于动态设置行为（getter为附加，可用可不用）
+     * 以下 setter 用于动态设置行为
      * @return
      */
-    public FlyBehavior getFlyBehavior() {
-        return flyBehavior;
-    }
-
     public void setFlyBehavior(FlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
-    }
-
-    public QuackBehavior getQuackBehavior() {
-        return quackBehavior;
     }
 
     public void setQuackBehavior(QuackBehavior quackBehavior) {

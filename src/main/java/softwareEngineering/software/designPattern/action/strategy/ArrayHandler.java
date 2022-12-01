@@ -15,6 +15,10 @@ public class ArrayHandler {
         return arr;
     }
 
+    /**
+     * 策略模式的核心的这里：根据 sortObj 动态选择排序方法
+     * @param sortObj
+     */
     public void setSortObj(Sort sortObj){
         this.sortObj = sortObj;
     }

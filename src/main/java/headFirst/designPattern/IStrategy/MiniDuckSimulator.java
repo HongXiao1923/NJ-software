@@ -18,7 +18,7 @@ public class MiniDuckSimulator {
         Duck model = new ModelDuck();
         model.performQuack();
         model.performFly();
-        model.setFlyBehavior(new FlyRocketPowered());
+        model.setFlyBehavior(new FlyRocketPowered());       //重新给模型鸭定义“飞”的属性
         model.performFly();
     }
 }
