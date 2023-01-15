@@ -1,6 +1,5 @@
 package headFirst.designPattern.VIIterator.iiNew;
 
-
 import java.util.Arrays;
 import java.util.Iterator;
 
@@ -14,7 +13,7 @@ import java.util.Iterator;
 public class DinerMenu implements Menu{
     static final int MAX_ITEMS = 6;
     int numberOfItems = 0;
-    MenuItem[] menuItems;
+    MenuItem[] menuItems;   //数组实现
 
     public DinerMenu() {
     }

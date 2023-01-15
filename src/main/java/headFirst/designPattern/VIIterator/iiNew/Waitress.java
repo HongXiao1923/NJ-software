@@ -1,6 +1,5 @@
 package headFirst.designPattern.VIIterator.iiNew;
 
-
 import java.util.Iterator;
 
 /**

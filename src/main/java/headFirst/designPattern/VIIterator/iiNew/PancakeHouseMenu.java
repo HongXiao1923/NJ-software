@@ -1,7 +1,5 @@
 package headFirst.designPattern.VIIterator.iiNew;
 
-
-
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -14,7 +12,7 @@ import java.util.List;
  * @see
  */
 public class PancakeHouseMenu implements Menu{
-    List<MenuItem> menuItems;
+    List<MenuItem> menuItems;       //List实现
 
     public PancakeHouseMenu() {
     }
