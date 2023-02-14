@@ -1,4 +1,4 @@
-package thread.aBase;
+package thread.aThinker.iBase;
 
 import java.applet.Applet;
 import java.awt.*;
@@ -15,13 +15,14 @@ import java.awt.event.WindowEvent;
  * @date 2023/2/13 0:40
  * @see
  */
-public class iCounterl extends Applet {
-    private int count = 0;
+public class iCounter2 extends Applet {
+
+    TextField t = new TextField(10);
+    private SeparateSubTask sp = null;
+
     private Button
         onOff = new Button("Toggle"),
-        start = new Button("start");
-    private TextField t = new TextField(10);
-    private boolean runFlag = true;
+        start = new Button("Start");
 
     public void init(){
         add(t);
@@ -31,40 +32,27 @@ public class iCounterl extends Applet {
         add(onOff);
     }
 
-    /**
-     * Todo 此处函数被设计为死循环的单线程，也没有返回值，意味着即使线程进入sleep()之后，CPU依然被占用
-     *      所以应该思考一种多线程的方式来改造go()？以便CPU发挥更大功效。
-     */
-    public void go(){
-        while(true){
-            try{
-                Thread.currentThread().sleep(100);
-            }catch (InterruptedException e){
-                //
-            }
-            if(runFlag){
-                t.setText(Integer.toString(count++));
-            }
-        }
-    }
-
     class StartL implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            go();
+            if(sp == null){
+                sp = new SeparateSubTask(iCounter2.this);
+            }
         }
     }
 
     class OnOffL implements ActionListener{
         @Override
         public void actionPerformed(ActionEvent e) {
-            runFlag = !runFlag;
+            if(sp != null){
+                sp.invertFlag();
+            }
         }
     }
 
     public static void main(String[] args) {
-        iCounterl applet = new iCounterl();
-        Frame frame = new Frame("iCounterl");
+        iCounter2 applet = new iCounter2();
+        Frame frame = new Frame("iCounter2");
         frame.addWindowListener(
                 new WindowAdapter() {
                     @Override
